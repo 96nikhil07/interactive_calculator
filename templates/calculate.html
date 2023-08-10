@@ -1,0 +1,27 @@
+<html>
+<head>
+    <title>Calculator</title>
+</head>
+<body>
+
+        <h1>Calculator By Nikhil</h1>
+    <form method="post">
+    <label for="input1">Input 1:</label>
+    <input type="text" id="input1" name="input1"><br><br>
+    
+    <label for="input2">Input 2:</label>
+    <input type="text" id="input2" name="input2"><br><br>
+    
+    <button type="submit" name="operation" value="Add">+</button>
+    <button type="submit" name="operation" value="Sub">-</button>
+    <button type="submit" name="operation" value="Multiply">*</button>
+    <button type="submit" name="operation" value="Divide">/</button>
+    </form>
+
+    {% if result is not none %}
+    <div id="outputDiv" name="output">
+        Result: {{ result }}
+    </div>
+    {% endif %}
+</body>
+</html>
